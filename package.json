@@ -1,6 +1,6 @@
 {
   "homepage": "https://freconur.github.io/fech",
-  "name": "portfolio",
+  "name": "fech",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
