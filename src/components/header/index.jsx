@@ -3,6 +3,8 @@ import "./header.css";
 const Header = () => {
   return (
     <div className="header">
+        {/* <div className="parallelogram"></div> */}
+        {/* <div className="polka"></div> */}
       <div className="photo_perfil_container">
         <img
           className="photo_perfil_image"

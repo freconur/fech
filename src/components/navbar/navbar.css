@@ -30,10 +30,15 @@
     font-family: 'Roboto';
     /* width: fit-content; */
     justify-content: center;
+    cursor: pointer;
     /* min-width: 300px; */
 }
 .navbar_section li {
     margin: 0px 30px;
+}
+.list a {
+    text-decoration: none;
+    color: black;
 }
 .navbar_dev_social{
     display: flex ;
@@ -51,4 +56,20 @@
     margin-left: 10px;
     font-weight: 900;
     font-family: 'Rubik';
+}
+
+.list a:hover {
+	color: black;
+}
+.list::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: black;
+	transition: width .3s;
+}
+.list:hover::after{
+	width: 100%;
+	transition: width .3s;
 }

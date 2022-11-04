@@ -14,9 +14,15 @@ const Navbar = () => {
         FECH
       </div>
       <ul className="navbar_section">
-        <li>proyectos</li>
-        <li>resumen</li>
-        <li>contacto</li>
+        <li className="list">
+          <a href="#projects">proyectos</a>
+        </li>
+        <li className="list">
+          <a href="resumen">resumen</a>
+        </li>
+        <li className="list">
+          <a href="contacto">contacto</a>
+        </li>
       </ul>
       <ul className="navbar_dev_social">
         <li>
