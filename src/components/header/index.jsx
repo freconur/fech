@@ -16,7 +16,7 @@ const Header = () => {
         <h2>Hola, soy Franco y soy programador <span className="sub">Fullstack javascript</span></h2>
         <p>
           Soy programador Fullstack javascript, en mi experiencia vengo
-          desarrollando proyectos personales, estoy muy motivado con el
+          desarrollando proyectos personales con las tecnologias mas demandantes, estoy muy motivado con el
           desarrollo de aplicaciones web, y sigo aprendiendo todos los dias.
         </p>
         <div className="button_container">
