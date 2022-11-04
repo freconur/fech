@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fech/static/css/main.288a7cbf.css",
+    "main.js": "/fech/static/js/main.c7a5f8bb.js",
+    "index.html": "/fech/index.html",
+    "main.288a7cbf.css.map": "/fech/static/css/main.288a7cbf.css.map",
+    "main.c7a5f8bb.js.map": "/fech/static/js/main.c7a5f8bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.288a7cbf.css",
+    "static/js/main.c7a5f8bb.js"
+  ]
+}
