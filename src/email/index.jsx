@@ -31,44 +31,48 @@ const Email = () => {
   };
   const onSubmit = (e) => {
     e.preventDefault();
+    let validator = 0;
     for (const property in value) {
+        validator = validator + 1;
       if (value[property] === "") {
         swal({
           title: "Por favor llena todos los campos",
           icon: "warning",
         });
         break;
+    }
+      if (validator === 3) {
+        emailjs
+          .sendForm(
+            "service_uo3l6tj",
+            "template_ztl700j",
+            e.target,
+            "zuJsKnKK4-oI0q0S8"
+          )
+          .then((response) => {
+            if (response.status === 200) {
+              swal({
+                title: "Acabas de enviarle un mensaje a Franco",
+                icon: "success",
+              });
+            }
+          })
+          .catch((error) => {
+            if (error) {
+              swal({
+                title: "Parece que algo salio mal, intentalo nuevamente",
+                icon: "error",
+              });
+            }
+          });
+        e.target.reset();
+        setValue(formulario);
       }
-      emailjs
-        .sendForm(
-          "service_uo3l6tj",
-          "template_ztl700j",
-          e.target,
-          "zuJsKnKK4-oI0q0S8"
-        )
-        .then((response) => {
-          if (response.status === 200) {
-            swal({
-              title: "Acabas de enviarle un mensaje a Franco",
-              icon: "success",
-            });
-          }
-        })
-        .catch((error) => {
-          if (error) {
-            swal({
-              title: "Parece que algo salio mal, intentalo nuevamente",
-              icon: "error",
-            });
-          }
-        });
-      e.target.reset();
-      setValue(formulario);
     }
   };
 
   return (
-    <div className="contact">
+    <div id="contactme" className="contact">
       <h2>contactame</h2>
       <form className="form" onSubmit={onSubmit}>
         <div className="form-group">
@@ -87,7 +91,7 @@ const Email = () => {
           <input
             onChange={onChangeValue}
             name="user_mail"
-            type="mail"
+            type="email"
             placeholder="correo"
           />
         </div>

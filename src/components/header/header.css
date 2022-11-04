@@ -94,3 +94,7 @@
     right: 83px;
     z-index: 20;
   }
+  .sub {
+    background: var(--black);
+    color: var(--white);
+  }

@@ -1,16 +1,27 @@
+@import '../../Varibles.css';
 .projects {
     font-family: 'Roboto';
     text-align: center;
     margin: 150px 0;
+}
+.projects h1 {
+    font-family: 'Rubik';
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 .info_project h2{
     text-transform: capitalize;
     margin: 5px 0;
     font-size: 1rem;
     text-align: left;
+    
 }
 .projects_introduce {
     margin: 40px 0;
+    font-size: 1.5rem;
+    color: var(--colorText1);
+    font-family: 'Roboto';
 }
 .tech_list_container li{
     text-transform: capitalize;

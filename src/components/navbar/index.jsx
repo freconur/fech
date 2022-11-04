@@ -18,10 +18,10 @@ const Navbar = () => {
           <a href="#projects">proyectos</a>
         </li>
         <li className="list">
-          <a href="resumen">resumen</a>
+          <a href="#skills">skills</a>
         </li>
         <li className="list">
-          <a href="contacto">contacto</a>
+          <a href="#contactme">contacto</a>
         </li>
       </ul>
       <ul className="navbar_dev_social">
