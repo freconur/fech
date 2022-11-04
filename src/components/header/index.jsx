@@ -6,7 +6,7 @@ const Header = () => {
       <div className="photo_perfil_container">
         <img
           className="photo_perfil_image"
-          src="https://firebasestorage.googleapis.com/v0/b/ecommerce-eacb4.appspot.com/o/InShot_20221031_111348109.jpg?alt=media&token=f062c11c-a12e-453d-abaf-d1236322989f"
+          src="https://firebasestorage.googleapis.com/v0/b/devprojects-591c8.appspot.com/o/portfoliopohoto.jpg?alt=media&token=f5c50077-098c-42ee-b763-7dac32b134d4"
           alt=""
         />
       </div>

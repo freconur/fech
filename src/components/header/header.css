@@ -6,11 +6,18 @@
     place-content: center;
 }
 .photo_perfil_container {
-    width: 100%;
-    /* width: 400px; */
+    width: 400px;
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+    margin-left: 80px;
 }
 .photo_perfil_image {
     width: 100%;
+    position: absolute;
+    /* bottom: -100px; */
+    left: 65px;
+    top: -100px;
 }
 .perfil_info_container {
     display: grid;
