@@ -11,16 +11,21 @@ const Header = () => {
         />
       </div>
       <div className="perfil_info_container">
-        <h2>Hola, soy Franco  y soy un programador javascript full stack</h2>
+        <h2>Hola, soy Franco y soy programador Javascript Full Stack</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veniam
-          quo atque, dignissimos omnis aut provident consequuntur voluptatum
-          saepe soluta beatae vero eveniet similique quis, aliquam ut fugit eos!
-          Distinctio.
+          Soy programador javascript full stack, en mi experiencia vengo
+          desarrollando proyectos personales, estoy muy motivado con el
+          desarrollo de aplicaciones web, y sigo aprendiendo todos los dias.
         </p>
         <div className="button_container">
-          <button className="contactme_button">contact me</button>
-          <button className="check_my_work">check my projects</button>
+          <a href="#contact">
+            <button className="contactme_button">contactame</button>
+          </a>
+          <a href="#projects">
+            <button id="projects" className="check_my_work">
+              mis proyectos
+            </button>
+          </a>
         </div>
       </div>
     </div>

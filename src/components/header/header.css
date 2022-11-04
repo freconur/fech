@@ -1,6 +1,7 @@
+@import '../../Varibles.css';
 .header {
     display: grid;
-    grid-template-columns: minmax(100px, 500px) minmax(100px, 400px);
+    grid-template-columns: minmax(100px, 500px) minmax(100px, 600px);
     margin: 50px 0;
     place-content: center;
 }
@@ -21,10 +22,14 @@
     font-family: 'Roboto';
 }
 .perfil_info_container p {
-    font-family: 'Roboto';
+    font-family: 'Rubik';
+    color: var(--colorText1);
+    font-size: .9rem;
 }
 .button_container button {
     border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
 }
 .contactme_button{
     border: none;
