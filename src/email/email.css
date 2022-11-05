@@ -6,6 +6,7 @@
     font-family: 'Roboto';
     grid-template-columns: minmax(300px, 600px);
     margin-bottom: 100px;
+    /* margin: 0px 20px; */
 }
 .contact h2 {
     font-family: 'Rubik';

@@ -3,6 +3,7 @@ import "./navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub as github } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin as linkedin } from "@fortawesome/free-brands-svg-icons";
+import { faBars as menu } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   return (
     <div className="Navbar">
@@ -12,7 +13,10 @@ const Navbar = () => {
           alt=""
         /> */}
         FECH
+      <FontAwesomeIcon className="burger_menu" icon={menu}/>
       </div>
+      {/* <div>
+      </div> */}
       <ul className="navbar_section">
         <li className="list">
           <a href="#projects">proyectos</a>

@@ -28,3 +28,8 @@
     background: black;
     color: white;
 }
+@media (max-width: 500px) {
+    .skills h2 {
+        text-align: center;
+    }
+}   
