@@ -18,6 +18,7 @@
     display: grid;
     place-items: center;
     place-content: center;
+    margin: 0px 10px;
 }
 .form-group {
     width: 100%;
@@ -25,7 +26,7 @@
     
 }
 .form-group input  {
-    width: 300px;
+    width: 100%;
     margin-top: 10px;
     height: 25px;
     border-radius: 3px;

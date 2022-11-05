@@ -1,30 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub as github } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin as linkedin } from "@fortawesome/free-brands-svg-icons";
 import { faBars as menu } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
+  const [activeMenu, setActiveMenu] = useState(false)
+  const onActiveMenu = () => {
+    setActiveMenu(!activeMenu)
+  }
   return (
     <div className="Navbar">
       <div className="brand">
-        {/* <img
-          src="https://firebasestorage.googleapis.com/v0/b/ecommerce-eacb4.appspot.com/o/ecommerce%2Flogo-wz.png?alt=media&token=d0543953-17db-43e3-a22a-947d560e980b"
-          alt=""
-        /> */}
         FECH
-      <FontAwesomeIcon className="burger_menu" icon={menu}/>
+      <FontAwesomeIcon onClick={onActiveMenu} className="burger_menu" icon={menu}/>
       </div>
-      {/* <div>
-      </div> */}
-      <ul className="navbar_section">
-        <li className="list">
+      <ul className={`navbar_section ${activeMenu && 'activeMenu' }`}>
+        <li onClick={() => setActiveMenu(!activeMenu)} className="list">
           <a href="#projects">proyectos</a>
         </li>
-        <li className="list">
+        <li onClick={() => setActiveMenu(!activeMenu)} className="list">
           <a href="#skills">skills</a>
         </li>
-        <li className="list">
+        <li onClick={() => setActiveMenu(!activeMenu)} className="list">
           <a href="#contactme">contacto</a>
         </li>
       </ul>

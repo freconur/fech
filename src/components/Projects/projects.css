@@ -138,6 +138,9 @@
     grid-template-columns: minmax(100px, 250px);
     grid-gap: 40px;
   }
+  .projects {
+    margin: 100px 20px;
+  }
 }
 @media (max-width: 500px) {
     .projects_introduce {
